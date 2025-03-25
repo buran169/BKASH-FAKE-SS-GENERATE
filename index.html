@@ -11,21 +11,14 @@
     <div class="container">
         <h2>Bkash Fake Screenshot Editor</h2>
 
-        <button id="generate">Generate Fake Screenshot</button>
+        <input type="file" id="uploadImage" accept="image/*">
+        <canvas id="canvas"></canvas>
 
-        <div id="screenshot-container">
-            <p><strong>Number:</strong> <span contenteditable="true" id="number">01301307865</span></p>
-            <p><strong>Amount:</strong> <span contenteditable="true" id="amount">10.00</span> BDT</p>
-            <p><strong>Transaction ID:</strong> <span contenteditable="true" id="trxid">WUR6EI8YRW</span></p>
-            <p><strong>Date:</strong> <span contenteditable="true" id="date">25-03-2025</span></p>
-            <p><strong>Time:</strong> <span contenteditable="true" id="time">12:30 PM</span></p>
-            <p><strong>Phone Time:</strong> <span contenteditable="true" id="phn-time">12:32 PM</span></p>
-            <p><strong>Phone Charge:</strong> <span contenteditable="true" id="phn-crg">85%</span></p>
-            <p><strong>Fee:</strong> <span contenteditable="true" id="fee">0.00</span> BDT</p>
-            <p><strong>Available Balance:</strong> <span contenteditable="true" id="balance">1,500.00</span> BDT</p>
+        <div class="controls">
+            <input type="text" id="textInput" placeholder="Enter Text">
+            <button id="addText">Add Text</button>
+            <button id="saveImage">Save Screenshot</button>
         </div>
-
-        <button id="save">Save Screenshot</button>
 
         <footer>
             <p>Made by <a id="burhan-link" href="#">Burhan</a></p>
@@ -35,4 +28,4 @@
     <script src="script.js"></script>
 
 </body>
-                                                    </html>
+</html>
