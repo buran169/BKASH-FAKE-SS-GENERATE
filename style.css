@@ -23,7 +23,7 @@ h2 {
     font-weight: bold;
 }
 
-input[type="file"], input[type="text"] {
+input[type="text"] {
     width: 90%;
     margin: 10px 0;
     padding: 8px;
@@ -65,4 +65,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
+    }
