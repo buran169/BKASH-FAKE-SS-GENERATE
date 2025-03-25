@@ -4,9 +4,13 @@ document.getElementById("generate").addEventListener("click", function () {
     fetch(apiUrl)
         .then(response => response.text())
         .then(data => {
+            // API response set korar jayga
             document.getElementById("screenshot-container").innerHTML = data;
         })
-        .catch(error => console.error("API Fetch Error:", error));
+        .catch(error => {
+            console.error("API Fetch Error:", error);
+            document.getElementById("screenshot-container").innerHTML = "<p style='color: red;'>Failed to load API data.</p>";
+        });
 });
 
 document.getElementById("save").addEventListener("click", function () {
@@ -16,4 +20,9 @@ document.getElementById("save").addEventListener("click", function () {
     a.href = URL.createObjectURL(blob);
     a.download = "fake_bkash_screenshot.html";
     a.click();
+});
+
+// Made by Burhan Link
+document.getElementById("burhan-link").addEventListener("click", function () {
+    window.location.href = "https://www.facebook.com/bullavaii01"; // Replace with your actual link
 });
